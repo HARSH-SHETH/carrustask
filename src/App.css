@@ -19,11 +19,26 @@ img{
 
 #userinfo{
   background: #9abfbf;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  padding-left: 5%;
+  overflow: auto;
   margin: 0 35%;
   color: #6d210e;
-  padding: 1%;
-  text-align: center;
   border-radius: 25px;
   font-size: large;
+  animation: animate 1.8s;
+  /* transition-duration: 3s; */
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(60px) rotateX(0.7turn);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
 }
